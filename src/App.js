@@ -19,7 +19,7 @@ function App() {
   today = yyyy + "-" + mm + "-" + dd;
  
 
-  console.log(today);
+  
   return (
     <>
     
