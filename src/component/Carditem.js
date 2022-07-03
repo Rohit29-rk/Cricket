@@ -61,6 +61,7 @@ export default function Carditem(props) {
             border: "1px solid black",
             borderRadius: "10px",
             boxShadow: "8px 8px 8px #333334",
+            height:"330px"
           }}
         >
           <div className="card-body">
