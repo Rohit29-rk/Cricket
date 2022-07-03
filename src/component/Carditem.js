@@ -117,7 +117,7 @@ export default function Carditem(props) {
             <p style={{ textAlign: "center" }}>
               Match Date:- {formatted} at {time} (IST)
             </p>
-            <p className="card-text">{props.result}</p>
+            <p className="card-text" style={{ textAlign: "center" }}>{props.result}</p>
 
             <Button
               size="small"
