@@ -118,6 +118,10 @@ footer span a{
   max-height: 0;
   overflow: hidden;}
 
+.btn-warning{
+  border-color: #000;
+}
+
 
 
 
