@@ -69,7 +69,7 @@ export class News extends Component {
          
 
           <h1 className="text-center" id="head" style={{ marginTop: "20px" }}>
-            <b>Crciket News</b>
+            <b>Cricket News</b>
           </h1>
           {this.state.loading && <Spinner />}
           <div className="row">
