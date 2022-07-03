@@ -109,17 +109,17 @@ export default function Carditem(props) {
             <p className="card-text">{props.result}</p>
 
             <div className="accordion">
-              <button
-                style={{position: "absolute",
-                  bottom: "15px",
-                  left: "20px"}}
-                className="btn btn-warning"
+              <Button
+                size="small"
+                variant="contained"
+                color="primary"
+                style={{ position: "absolute", bottom: "15px", left: "20px" }}
                 onClick={() => {
                   set(props.id);
                 }}
               >
                 More Details
-              </button>
+              </Button>
             </div>
             <div className="panel">
               <p
