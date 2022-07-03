@@ -31,7 +31,7 @@ function App() {
           
           
             <Switch>
-            <Route exact path="/"><Card key="top" match="Matches" category="results-by-date"/></Route>
+            <Route exact path="/"><Card key="top" match="Matches" category="fixtures-by-date"/></Route>
             <Route exact path="/recent"><Card  key="result" match="Recent Matches" category="results" /></Route>
             <Route exact path="/upcoming"><Card key="fixture" match="Fixtures" category="fixtures"  /></Route>
             <Route exact path="/news"><News key="News"/></Route>
