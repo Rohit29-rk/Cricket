@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Carditem(props) {
   var date = new Date(`${props.date}`);
-
+  var time=date.toLocaleString('en-IN', { hour: 'numeric', minute: 'numeric', hour12: true })
   var year = date.getFullYear();
   var month = date.getMonth() + 1;
   var day = date.getDate();
@@ -73,7 +73,25 @@ export default function Carditem(props) {
               }}
             >
               <b>{props.home}</b>
+            </h4>
+            <h4
+              className="card-title"
+              style={{
+                display: "flex",
+                justifyContent: "space-around",
+                flexWrap: "wrap",
+              }}
+            >
               <b>VS</b>
+            </h4>
+            <h4
+              className="card-title"
+              style={{
+                display: "flex",
+                justifyContent: "space-around",
+                flexWrap: "wrap",
+              }}
+            >
               <b>{props.away}</b>
             </h4>
             <h5
@@ -86,11 +104,14 @@ export default function Carditem(props) {
               <p style={{ textAlign: "center" }}>{props.sub}</p>
               
             </h5>
-            <p style={{ textAlign: "center" }}>Match Date:- {formatted}</p>
+            <p style={{ textAlign: "center" }}>Match Date:- {formatted} at {time} (IST)</p>
             <p className="card-text">{props.result}</p>
 
             <div className="accordion">
               <button
+                style={{position: "absolute",
+                  bottom: "15px",
+                  left: "20px"}}
                 className="btn btn-warning"
                 onClick={() => {
                   set(props.id);
