@@ -14,7 +14,7 @@ export default function Card(props) {
 
   useEffect(() => {
   
-    if (a === "results-by-date") {
+    if (a === "fixtures-by-date") {
       
       fetch(`https://cricket-live-data.p.rapidapi.com/${props.category}/${today}`, {
 	"method": "GET",
