@@ -35,10 +35,10 @@ export default function Card(props) {
     } else {
       fetch(`https://cricket-live-data.p.rapidapi.com/${props.category}`, {
 	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "cricket-live-data.p.rapidapi.com",
-		'x-rapidapi-key': 'ee04320577mshf6a00189e14657dp168caejsncbfa266427c3'
-	}
+	headers: {
+		"X-RapidAPI-Key": "a13885e6f8mshb6863976f9c74dcp15ff38jsnd774e276b914",
+		"X-RapidAPI-Host": "cricket-live-data.p.rapidapi.com",
+      	},
 })
 
         .then((res) => res.json())
