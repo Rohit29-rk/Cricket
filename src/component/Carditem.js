@@ -37,8 +37,8 @@ export default function Carditem(props) {
     fetch(`https://cricket-live-data.p.rapidapi.com/match/${id}`, {
       method: "GET",
       headers: {
-        "x-rapidapi-host": "cricket-live-data.p.rapidapi.com",
-        "x-rapidapi-key": "ee04320577mshf6a00189e14657dp168caejsncbfa266427c3",
+        "X-RapidAPI-Key": "a13885e6f8mshb6863976f9c74dcp15ff38jsnd774e276b914",
+        "X-RapidAPI-Host": "cricket-live-data.p.rapidapi.com",
       },
     })
       .then((res) => res.json())
@@ -62,7 +62,7 @@ export default function Carditem(props) {
             border: "1px solid black",
             borderRadius: "10px",
             boxShadow: "8px 8px 8px #333334",
-            height:"330px"
+            height:"350px"
           }}
         >
           <div className="card-body">
